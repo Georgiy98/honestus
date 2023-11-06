@@ -7,6 +7,7 @@
     'depends': [
         'auth_signup',
         'portal',
+        'sale',
     ],
     'installable': True,
     'data': [
