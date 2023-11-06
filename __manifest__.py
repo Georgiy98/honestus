@@ -4,9 +4,14 @@
     'category': 'Website/Website',
     'sequence': 20,
     'version': '1.0',
-    'depends': [],
+    'depends': [
+        'auth_signup',
+        'portal',
+    ],
     'installable': True,
-    'data': [],
+    'data': [
+        'views/mobile_extension.xml',
+    ],
     'application': True,
     'license': 'LGPL-3',
 }
