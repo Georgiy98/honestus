@@ -1,4 +1,0 @@
-Questions:
-1) Must 'mobile' field be required in registration form?
-2) There is a task "This Mobile number should appear in contact (res.partner) screen".
-But it presents there by default. Maybe, you would like to place it on any other location?

@@ -1,0 +1,12 @@
+Questions:
+1) Must 'mobile' field be required in registration form?
+2) There is a task "This Mobile number should appear in contact (res.partner) screen".
+But it presents there by default. Maybe, you would like to place it on any other location?
+3) Should 'honestus code' be required in case of 'default code' presents or vice versa?
+4) There is a task "In "Product" column, Honestus Code should be printed instead of Default Code".
+But it doesn't present in report
+
+Answer to Task 5:
+I would propose to split this task and process it by pieces. 
+When a particular task is completed, it saves the temporary result and the next one begins.
+This process will be repeated until the entire file has been processed.

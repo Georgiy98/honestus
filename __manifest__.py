@@ -12,6 +12,7 @@
     'data': [
         'views/mobile_extension.xml',
         'views/product_with_honestus_code_and_price.xml',
+        'views/report.xml',
     ],
     'application': True,
     'license': 'LGPL-3',
