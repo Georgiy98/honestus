@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="product_with_honestus_code_and_price_tree" model="ir.ui.view">
+            <field name="name">product_with_honestus_code_and_price_tree</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="after">
+                    <field name="honestus_code" optional="show" readonly="1"/>
+                </xpath>
+                <xpath expr="//field[@name='standard_price']" position="after">
+                    <field name="honestus_price" optional="show" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_with_honestus_code_and_price_normal_form" model="ir.ui.view">
+            <field name="name">product_with_honestus_code_and_price_normal_form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='standard_price_uom']" position="after">
+                    <field
+                        name="honestus_price"
+                        class="oe_inline"
+                        widget='monetary'
+                        options="{'currency_field': 'currency_id', 'field_digits': True}"
+                    />
+                    <field
+                        name="honestus_code"
+                        attrs="{'required': [('default_code', '!=', '')]}"
+                    />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
